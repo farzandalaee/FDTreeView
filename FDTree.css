@@ -1,0 +1,74 @@
+.FDTreeDiv{
+    direction: rtl;
+    font-family: tahoma;
+    font-size: 1em;
+}
+.FDTreeDiv > a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #000;
+}
+.FDTreeDiv > a > i{
+    color: green;
+}
+.fdTree{
+    direction: rtl;
+    font-family: tahoma;
+    -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.3s ease-out;
+    padding-right: 30px;
+}
+.fdTree li{
+    clear: both;
+    margin: 7px 0 7px 0;
+    list-style: none;
+}
+.fdTree .fdTree{
+    display: none;
+    margin-right: 0px;
+}
+.fdTree input[type="checkbox"]{
+    float: right;
+    display: none;
+}
+.fdTree .labelTree{
+    background-image: url(images/toggle-small-expand.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 30px!important;
+    cursor: pointer;
+}
+.fdTree input[type="checkbox"]:checked + .fdTree{
+    display: block!important;
+}
+.fdTree span{
+    cursor: pointer;
+    padding-right: 30px!important;
+}
+.fdTree input[type="text"]{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    border: 1px solid gray;
+    font-family: tahoma;
+}
+.fdTree i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.fdTree i.fa-plus{
+    color: green;
+}
+.fdTree i.fa-trash-o{
+    color: red;
+}
+.fdTree i.fa-pencil{
+    color: orange;
+}
+.fdTree i.fa-ban{
+    color: red;
+    z-index:99999999;
+}
+.fdTree i.fa-check{
+    color: green;
+}
